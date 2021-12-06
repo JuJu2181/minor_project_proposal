@@ -1,2 +1,25 @@
 \chapter{Introduction}
 \section{Background}
+Number Plate Recognition (NPR) system was first in  1976 at the Police Scientific Development Branch in Britain\cite{anpr_wikipedia} .This system uses the Optical character Recognition (OCR) on image taken by camera.
+In last few years, Number Plate Recognition (NPR) has been one of the useful approaches for vehicle monitoring and management.In Nepal, there is high increase in numbers of vehicles. Due to insufficient spaces and techniques, there is hazard in parking management system. This Number Plate Recognition (NPR) can be useful system to eradicate those problems.\\
+Nepali number plate character are selected from the pool of 29 characters in a speciﬁc orders. Order deﬁnes various characteristic of the number plates such as vehicle type, vehicle load, etc. The number plates used in Nepal are usually of two formats one containing all the characters in a single row and the other containing two rows of characters. Characters are selected from Devanagari script.Nepali vehicles have license numbers encoded in the both rear and front side with two different sized rectangular plates. The front sized plates are usually in 4: 1 ratio and the back sized plates are in 4: 3 ratio.\cite{pandey_2020}\\
+Historically, This type of system were used in unidentified crimes but later, it was proposed in the traffic management along with road management. Approximately 1.3 million people die each year as a result of road traffic crashes.\cite{world_health_organization} This condition are the consequences of the inadequate and insufficient vehicle management system.   
+
+\section{Problem Statement}
+The Rapid Population Growth (RPG) in major cities of Nepal over years has demanded special attention in vehicle management and monitoring.Over the few years, number of road accidents, traffic congestion, and vehicle theft has increased. \\
+NPR system has two parts. Firstly, it consists camera or video that has vehicle number plate images.Secondly, a software that extracts the number plates by performing following steps: color conversion, color masking, number plate localization, character segmentation and finally character recognition, storing in  the database.\\
+Vehicles are classified under three categories( heavy and medium size, light size and 2-wheeler \& 3- wheeler). For this categories, there is 16 Devanagari letter along with 14 zonal Devanagari letter and Nepali numbers(0-9). Since this project is based on Nepali letter i.e Devanagari Letter, we may encounter challenges on regard of number plate localization and character segmentation. Besides Nepali Number Plate has 6 different coloured plate system, it also gives challenges in color conversion. The possible solution to this problem is managed by the use of Convolution Neural Network (CNN). In major cities of Nepal like Kathmandu, Lalitpur \& Bhaktapur, there is large number of 2-wheeler vehicle running in congestion manner. Therefore, this NPR system may face problem in Vehicle counting and Number plate detection resulting in low accuracy of NNPR system. Moreover, the efficiency of NNPR system may decrease during the night time. To ensure the high effieciency of this system, the high quality survillence camera and high processing system must be introduced in the field. 
+\\
+Different Research shows that Number Plate Recognition(NPR) are used bu the Police department to investigate in different activities.According to a 2012 report by the Police Executive Research Forum, approximately 71 \% of all US police departments use some form of Automatic Number Plate Recognition (ANPR) \cite{anpr_wikipedia}. This system have become the intelligence partner and policing strategies for police department for identification of stolen cars and vehicle identification for certains investigation. In  the United Kingdom, The Home Office states the purpose of automatic number-plate recognition (ANPR) in the United Kingdom is to help detect, deter and disrupt criminality including tackling organised crime groups and terrorists\cite{anpr_wikipedia}.
+\\
+Nepali Number Plate Recognition (NNPR) system manages the traffic with high accuracy eliminating the different problems arised due to vehicle congestion. This system helps Nepal Traffic Police (NTP) in management of huge traffic in major cities in significant manner.
+
+\section{Objectives}
+The main aim of Nepali Number Plate Recognition (NNPR) system are:\ 
+\begin{itemize}
+    \item To identify Number Plate automatically. 
+    \item To recognize Devanagari characters in Nepali number plates.
+    \item To record the identified number plates
+    \item To be robust enough to handle different scenarios
+    \item To test various models for image processing and character recognition.
+\end{itemize}
